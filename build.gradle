@@ -42,12 +42,12 @@ subprojects {
         // If you remove this line, sources will not be generated.
         withSourcesJar()
 
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     tasks.withType(JavaCompile).configureEach {
-        it.options.release = 17
+        it.options.release = 21
     }
 
     // Configure Maven publishing.
@@ -73,12 +73,12 @@ subprojects {
     }
 
     task buildMondoTp(type: Copy) {
-        dependsOn ':fabric:build', ':forge:build'
+        dependsOn ':fabric:build', ':neoforge:build'
 
         from(project(':fabric').file("build/libs")) {
             include "$rootProject.archives_name-$minecraft_version-$project.name-${mod_version}.jar"
         }
-        from(project(':forge').file("build/libs")) {
+        from(project(':neoforge').file("build/libs")) {
             include "$rootProject.archives_name-$minecraft_version-$project.name-${mod_version}.jar"
         }
 

@@ -11,5 +11,4 @@ public final class MondoTeleportForge {
         EventBuses.registerModEventBus(MondoTeleport.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
         MondoTeleport.init();
     }
-
 }

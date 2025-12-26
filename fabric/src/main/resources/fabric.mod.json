@@ -21,11 +21,10 @@
     ]
   },
   "mixins": [
-    "mondoteleport.mixins.json",
-    "mondoteleport.fabric.mixins.json"
+    "mondoteleport.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.18.3",
+    "fabricloader": "*",
     "minecraft": "~1.21.1",
     "java": ">=21",
     "architectury": ">=13.0.8",

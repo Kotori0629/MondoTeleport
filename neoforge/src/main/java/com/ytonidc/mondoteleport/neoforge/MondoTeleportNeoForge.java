@@ -1,4 +1,4 @@
-package com.ytonidc.mondoteleport.forge;
+package com.ytonidc.mondoteleport.neoforge;
 
 import com.ytonidc.mondoteleport.MondoTeleport;
 import net.neoforged.fml.common.Mod;

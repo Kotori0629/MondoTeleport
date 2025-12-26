@@ -1,13 +1,13 @@
 {
   "required": true,
   "package": "com.ytonidc.mondoteleport.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
   "client": [
   ],
   "mixins": [
-    "MixinEntityArgument",
     "MixinEntitySelector",
+    "MixinEntitySelectorParser",
     "MixinTeleportCommand"
   ],
   "injectors": {
